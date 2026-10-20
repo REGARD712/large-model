@@ -1,0 +1,3 @@
+modelscope>=1.38.0
+transformers==4.55.4
+gradio==5.50.0
