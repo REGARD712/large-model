@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>慢时光咖啡 · Slow Time Coffee</title>
+  <meta name="description" content="慢时光咖啡 —— 用一杯咖啡的时间，慢下来感受生活。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 顶部导航栏 -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">慢时光咖啡</span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">首页</a>
+        <a href="#about" class="nav-link">关于我们</a>
+        <a href="#menu" class="nav-link">菜单</a>
+        <a href="#gallery" class="nav-link">环境</a>
+        <a href="#contact" class="nav-link">联系我们</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 英雄轮播区 -->
+  <section class="hero" id="home">
+    <div class="carousel" id="carousel">
+      <div class="slide active" style="background-image:url('https://picsum.photos/seed/coffee1/1600/900')">
+        <div class="slide-content">
+          <h1>慢下来，品味时光</h1>
+          <p>每一杯咖啡，都是一段值得被铭记的慢时光</p>
+          <a href="#menu" class="btn-primary">查看菜单</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image:url('https://picsum.photos/seed/coffee2/1600/900')">
+        <div class="slide-content">
+          <h1>匠心手冲，只为一杯好咖啡</h1>
+          <p>精选世界各地优质咖啡豆，由专业咖啡师手工调制</p>
+          <a href="#about" class="btn-primary">了解更多</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image:url('https://picsum.photos/seed/coffee3/1600/900')">
+        <div class="slide-content">
+          <h1>咖啡与甜点的完美邂逅</h1>
+          <p>每日新鲜烘焙的甜点，搭配香浓咖啡，让味蕾起舞</p>
+          <a href="#menu" class="btn-primary">探索美味</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn prev" id="prevBtn" aria-label="上一张">‹</button>
+    <button class="carousel-btn next" id="nextBtn" aria-label="下一张">›</button>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <!-- 关于我们 -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>关于我们</h2>
+        <p>在快节奏的城市里，留一处慢下来的角落</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="https://picsum.photos/seed/cafe-about/600/800" alt="慢时光咖啡馆" />
+        </div>
+        <div class="about-text">
+          <h3>用热爱，冲煮每一杯咖啡</h3>
+          <p>慢时光咖啡创立于 2015 年，我们相信一杯好咖啡能让忙碌的生活慢下来。从产地到杯中，我们严选每一颗咖啡豆，用心烘焙、精心冲煮，只为把最纯粹的风味呈现给你。</p>
+          <p>这里不仅有咖啡，更是一个可以卸下疲惫、与朋友相聚、与自己对话的空间。欢迎走进慢时光，享受属于你的片刻宁静。</p>
+          <div class="features">
+            <div class="feature">
+              <div class="feature-icon">🌱</div>
+              <div>
+                <h4>精选原料</h4>
+                <p>全球产地直采优质生豆</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">👨‍🍳</div>
+              <div>
+                <h4>匠心手作</h4>
+                <p>专业咖啡师手工调制</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🌿</div>
+              <div>
+                <h4>舒适环境</h4>
+                <p>温馨惬意的第三空间</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 菜单 -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-title">
+        <h2>精选菜单</h2>
+        <p>总有一杯，适合此刻的你</p>
+      </div>
+      <div class="tabs" id="menuTabs">
+        <button class="tab active" data-category="hot">热饮</button>
+        <button class="tab" data-category="cold">冷饮</button>
+        <button class="tab" data-category="dessert">甜点</button>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- 环境展示 -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-title">
+        <h2>店内环境</h2>
+        <p>温馨角落，静待你的到来</p>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://picsum.photos/seed/gallery1/600/400" alt="环境1" />
+        <img src="https://picsum.photos/seed/gallery2/600/400" alt="环境2" />
+        <img src="https://picsum.photos/seed/gallery3/600/400" alt="环境3" />
+        <img src="https://picsum.photos/seed/gallery4/600/400" alt="环境4" />
+        <img src="https://picsum.photos/seed/gallery5/600/400" alt="环境5" />
+        <img src="https://picsum.photos/seed/gallery6/600/400" alt="环境6" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系我们 -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>联系我们</h2>
+        <p>欢迎来店，或与我们取得联系</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <h4>门店地址</h4>
+              <p>上海市静安区南京西路 168 号慢时光大厦 1 层</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🕐</span>
+            <div>
+              <h4>营业时间</h4>
+              <p>周一至周日 07:00 - 23:00</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <h4>联系电话</h4>
+              <p>021-8888-8888</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <h4>电子邮箱</h4>
+              <p>hello@slowtimecoffee.com</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3>给我们留言</h3>
+          <input type="text" placeholder="您的姓名" required />
+          <input type="email" placeholder="电子邮箱" required />
+          <textarea placeholder="想说的话..." rows="5" required></textarea>
+          <button type="submit" class="btn-primary">提交留言</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-icon">☕</span>
+          <span class="logo-text">慢时光咖啡</span>
+        </div>
+        <div class="social">
+          <a href="#" aria-label="微信">微信</a>
+          <a href="#" aria-label="微博">微博</a>
+          <a href="#" aria-label="小红书">小红书</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 慢时光咖啡 Slow Time Coffee. 用一杯咖啡的时间，慢下来感受生活。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
